@@ -1,0 +1,39 @@
+/*Navbar/menu styles*/
+*{
+    margin: 0;
+    padding-top: 5;
+}
+
+nav{
+    background-color: rgb(251, 234, 230);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    font-family: serif;
+    font-size: x-large;
+}
+
+/* Styling unordered list container */
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Styling unordered lits-items*/
+nav li {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.logo {
+    justify-content: left;
+}
+
+
+.front-pic{
+    width: 10px;
+    display: flex;
+    justify-content: center;
+}
+
