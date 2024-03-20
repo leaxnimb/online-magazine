@@ -1,39 +1,198 @@
+@font-face {
+    font-family: 'LaBelleAurore';
+    src: url(../fonts/La_Belle_Aurore/LaBelleAurore-Regular.ttf);
+}
+
 /*Navbar/menu styles*/
 *{
     margin: 0;
-    padding-top: 5;
+    padding:0;
+    box-sizing: border-box;
 }
+
 
 nav{
     background-color: rgb(251, 234, 230);
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px rgba(168, 55, 78);
+    display: flex;
     font-family: serif;
     font-size: x-large;
+    flex-direction: row;
+    justify-content: space-around;
+    border: red 2px solid;
 }
+
 
 /* Styling unordered list container */
 nav ul {
-    width: 100%;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center; /*space around giver det mellemrum*/
     align-items: center;
+    font-family: LaBelleAurore, 'Times New Roman', Times, serif;
+    max-width: 80%;
+    border: blue 2px solid;
+    align-items: center;
+    align-content: flex-start;
+
 }
 
-/* Styling unordered lits-items*/
+/* Styling unordered lists-items*/
 nav li {
     height: 50px;
-    margin-top: 10px;
+    margin-right: 1%;
+    border: green 2px solid;
 }
 
-.logo {
-    justify-content: left;
+/*Tekst color styling*/
+a{
+    text-decoration: none;
+    color: rgba(168, 55, 78,1);    
+}
+
+/*Trying to make the right space between menu elements - now working*/
+.rightLi{
+    margin-right: 50px;
+}
+
+#brandName {
+    margin-right: 310px;
 }
 
 
-.front-pic{
-    width: 10px;
+
+/*KRISE HJÆLP TAK*/
+/*Styling submenu*/
+ul li ul.submenu li{
+    display: block;
+
+    /* position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: green; */
+}
+
+
+ul li ul.submenu {
+    width: 100%;
+    background-color: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+
+    /* position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: green; */
+}
+
+
+nav ul .submenu li a {
+    padding: 0 10px;
+}
+
+nav ul .submenu:hover .submenu {
+    display: block;
+}
+
+nav a {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:active {
+    letter-spacing: 0px;
+}
+
+nav a::before
+nav a::after {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+nav a::before {
+    left: 0;
+}
+
+nav a::after {
+    right: 0;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+
+}
+
+
+
+
+
+/*Styling main*/
+.front-pic {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+}
+
+.spalter {
+    justify-content: space-between;
+    display: flex;
+   
+}
+
+.pic-row{
+    padding: 1%;
+    background-color: rgb(251, 234, 230);
+    color: rgba(168, 55, 78);
+}
+
+.mini-billede {
+    background-color: rgb(251, 234, 230);
+    display: flex;
+    flex-direction: row;
+}
+
+h2 { 
+    font-family: LaBelleAurore, 'Times New Roman', Times, serif;
+    color: rgba(168, 55, 78);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center
+
+}
+
+.pic-row p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+
+
+footer {
+    padding-top: 20px;
+    background-color:rgba(168, 55, 78);
+    display: flex;
+    flex-direction: row;
+    color: rgb(251, 234, 230);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.logo-transparent {
+    width: 80px;
+    display: flex;
 }
 

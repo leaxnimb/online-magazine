@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,32 +7,112 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
-    <nav>
-        <ul>
-            <li><a class="logo" href="index.html">Nimb & Naal</a></li>
-            <li><a href="nybegynder.html">Nybegynder</a></li>
-            <li><a href="#">Opskrifter</a></li>
-            <li><a href="inspiration.html">Inspiration</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Mere</a></li>
+    <!--Her er koden for min menubar-->
+    <header>
+     <nav>
+        <ul class="navBar">
+            <li id="brandName"><a href="index.html">Nimb & Nål</a></li>
+
+            <li class="rightLi"><a href="#">Nybegynder</a>
+                <ul class="submenu" id="nybegynderSub">
+                    <li><a href="#">Materialer</a></li>
+                    <li><a href="nybegynder.html"></a>Grundteknik</li>
+                    <li><a href="#">Tips & Tricks</a></li>
+                </ul>
+            </li>
+
+            <li class="rightLi"><a href="#">Opskrifter</a>
+                <ul class="submenu" id="opskrifterSub">
+                    <li><a href="#">Sweater/Cardigans</a></li>
+                    <li><a href="#">Toppe/Bluser</a></li>
+                    <li><a href="#">Kjoler</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Pynt</a></li>
+                </ul>
+            </li>
+
+            <li class="rightLi"><a href="#">Inspiration</a>
+                <ul class="submenu" id="inspirationSub">
+                    <li> <a href="inspiration.html">Billedgalleri</a></li>
+                    <li><a href="#">Brug dit restgarn</a></li>
+                </ul>
+            </li>
+
+            <li class="rightLi"><a href="#">Shop</a>
+                <ul class="submenu" id="shopSub">
+                    <li><a href="#">Hæklenåle</a></li>
+                    <li><a href="#">Garn</a></li>
+                    <li><a href="#">Diverse</a></li>
+                </ul>
+            </li>
+            
+            <li class="rightLi"><a href="#">Mere</a>
+                <ul class="submenu" id="mereSub">
+                    <li><a href="#">Om</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Handelsbetingelser</a></li>
+                    <li><a href="#">Bæredygtighed</a></li>
+                </ul>
+            </li>
+
         </ul>
-    </nav>
-    
+     </nav>
+    </header>
+
     <main>
+        <!--Forside billedet-->
         <section class="front-pic">
-            <img  src="img/front-pic.jpg" alt="billede af en farverig hæklet cardigan med lyserød tekst hvor der står nye sommer opskrifter">
+            <img  src="img/front-pic.jpg" alt="billede af en farverig hæklet cardigan med lyserød tekst hvor der står nye sommer opskrifter" style="max-width: 1200px;">
         </section>
         
+        <!--Spalter med billede inkl. tekst-->
+        <section class="spalter">
+       
+            <section class="pic-row" >
+                <img class="mini-billede" src="img/spalte-1.jpeg" alt="Blå hæklet top med åben ryg" style="max-width: 450px;">
+                <h2 class="spalte-1">Ny opskrift!</h2>
+                <p class="spalte-1">Det er langsomt ved at blive varmere udenfor og vores nye opskrift til ’Smilla-blusen’ er netop landet.
 
+                    Frisk din garderobe op med en ny chic bluse med åben ryg - stilfuldt og unikt!
+                    </p>
+            </section>   
+            
+
+            <section class="pic-row">
+                <img class="mini-billede" src="img/spalte-2.jpeg" alt="Gul hæklet top" style="max-width: 450px;">
+                <h2 class="spalte-2">Kom langt med hulmasker </h2>
+                <p class="spalte-2">Lad farverne inspirere din stil-
+                    Her finder du trendy og farverige looks- og accessories der kan være med til at gøre de grå dage blå!
+                    </p>
+            </section>
+
+
+             <section class="pic-row">
+                 <img class="mini-billede" src="img/spalte-3.jpeg" alt="Blå hæklet top og hårbånd" style="max-width: 450px;">
+                 <h2 class="spalte-3">Blå er det nye sort</h2>
+                 <p class="spalte-3">Mister du også hurtigt motivationen ved almindelige stangmasker? 
+
+                    Oplev hvordan en en tykkere nål og nogle hulmasker hjælper dig med at få blusen færdig på 0.5
+                    </p>
+             </section> 
+    
+        </section>
+    
     </main>
-
-
+  
 </body>
 
 
 <footer>
-
+    <img class="logo-transparent" src="img/logo-transparent1.png" alt="Garn med nimb&nål tekst">
+    
+    <section class="kontakt"> 
+        <p>nimbognaal@mail.dk</p>
+        <br>
+        <p>+45 29683330</p>
+    </section>
 
 </footer>
 </html>
